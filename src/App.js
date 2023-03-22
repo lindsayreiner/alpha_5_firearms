@@ -10,10 +10,12 @@ import './styles/App.css';
 
 import Home from './pages/Home';
 import About from './pages/About';
-import Coaching from './pages/Coaching';
+// import Coaching from './pages/Coaching';
 import Contact from './pages/Contact';
+import Blog from './pages/Blog';
 
-import Nav from './components/Nav';
+// import Nav from './components/Nav';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 function App() {
@@ -25,12 +27,13 @@ function App() {
     <>
       <Router>
         <main>
-          <Nav />
+          <Navbar />
           <Routes>
 
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/coaching" element={<Coaching />} />
+            {/* <Route path="/coaching" element={<Coaching />} /> */}
+            <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
 
           </Routes>
