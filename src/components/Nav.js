@@ -9,7 +9,7 @@ export default function Nav() {
     return (
         <>
             <nav className="nav">
-                <NavLink className="bizName" to="/">Alpha 5 Firearms Training</NavLink>
+                <NavLink className="bizName" to="/"><img href="../images/a5_logo.png" /></NavLink>
 
                 <ul className="navCont">
                     <li className="navBtn">

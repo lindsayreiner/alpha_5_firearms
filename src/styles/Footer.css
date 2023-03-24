@@ -1,0 +1,14 @@
+body>footer {
+    position: sticky;
+    top: 100vh;
+}
+
+.footer {
+    height: 10em;
+    width: 100%;
+    color: white;
+    background-color: var(--darkest);
+    border-top: 10px double var(--red);
+    display: flex;
+    font-size: 2em;
+}

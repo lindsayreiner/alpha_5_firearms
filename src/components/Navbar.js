@@ -2,14 +2,17 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import '../styles/Navbar.css';
+import logo from '../images/ag_logo_2.png';
 
 export default function Navbar() {
     return (
         <>
             <nav class="top-nav">
-                <NavLink className="bizName" to="/">
-                    A5 Firearms Training
+
+                <NavLink className="navBtn" to="/">
+                    <img className="logo" src={logo} alt="alpha firearms logo" />
                 </NavLink>
+
                 <input id="menu-toggle" type="checkbox" />
                 <label class='menu-button-container' for="menu-toggle">
                     <div class='menu-button'></div>
@@ -24,9 +27,9 @@ export default function Navbar() {
                     <li>
                         <NavLink className="navBtn" to="/about">Meet Your Instructor</NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink className="navBtn" to="/blog">Blog</NavLink>
-                    </li>
+                    </li> */}
                     <li>
                         <NavLink className="navBtn" to="/contact">Contact</NavLink>
                     </li>

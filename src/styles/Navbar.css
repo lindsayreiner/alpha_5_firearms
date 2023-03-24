@@ -1,4 +1,4 @@
-.bizName {
+/* .bizName {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -12,13 +12,17 @@
     width: 10em;
     height: 10px;
     margin-left: 2rem;
+} */
+
+.logo {
+    height: 230px;
 }
 
 .navBtn {
     text-decoration: none;
     list-style: none;
     color: var(--french-gray);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     letter-spacing: 2px;
     transition: all 0.25s ease-in;
     padding: 0.2em;
@@ -40,8 +44,8 @@ li:hover {
     justify-content: space-between;
     background-color: var(--darkest);
     color: #FFF;
-    height: 75px;
-    padding: 1em;
+    height: 110px;
+    padding-bottom: 1em;
 }
 
 .menu {
@@ -116,20 +120,33 @@ li:hover {
 @media (max-width: 870px) {
     .top-nav {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 100px;
+        justify-content: space-between;
+        margin-right: 1rem;
+        width: 100%;
+    }
+
+    .logo {
+        height: 190px;
+    }
+
+    .navBtn {
+        font-size: 1.3rem;
     }
 }
 
 @media (max-width: 700px) {
-    .bizName {
-        /* margin: 0 auto; */
+    /* .bizName {
+        margin: 0 auto;
         border: none;
         box-shadow: none;
         margin: 0;
         padding: 0;
         text-shadow: 2px 2px var(--red);
+    } */
+
+    .logo {
+        height: 165px;
+        /* margin: 0 auto; */
     }
 
     .top-nav {
@@ -139,6 +156,7 @@ li:hover {
         justify-content: space-between;
         height: 70px;
         padding: 1em;
+        width: 100%;
     }
 
     .menu-button-container {
@@ -172,7 +190,7 @@ li:hover {
     }
 
     #menu-toggle:checked~.menu li:first-child {
-        margin-top: 4.5em;
+        margin-top: 5.2em;
     }
 
     .menu>li {
@@ -180,7 +198,7 @@ li:hover {
         justify-content: center;
         margin: 0;
         padding: 0.5em 0;
-        width: 100%;
+        width: 102.5%;
         color: var(--french-gray);
         background-color: var(--jet);
     }
@@ -191,5 +209,40 @@ li:hover {
 
     .navBtn:focus {
         color: var(--french-gray);
+    }
+}
+
+@media (max-width: 676px) {
+
+    .menu>li {
+        width: 103.5%;
+    }
+}
+
+@media (max-width: 511px) {
+
+    .menu>li {
+        width: 103.5%;
+    }
+}
+
+@media (max-width: 436px) {
+
+    .menu>li {
+        width: 104%;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .menu>li {
+        width: 104.6%;
+    }
+}
+
+@media (max-width: 280px) {
+
+    .menu>li {
+        width: 104.8%;
     }
 }
