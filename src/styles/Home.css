@@ -1,0 +1,20 @@
+.hero-content {
+    position: relative;
+    margin: 5rem;
+}
+
+.hero-img {
+    /* width: 100vw; */
+    height: 60vh;
+}
+
+.hero-text {
+    /* position: absolute; */
+}
+
+@media screen and (max-width: 700px) {
+    .hero-img {
+        width: 100vw;
+        height: 45vh;
+    }
+}

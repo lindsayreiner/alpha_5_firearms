@@ -4,6 +4,7 @@ body>footer {
 }
 
 .footer {
+    top: 100vh;
     height: 10em;
     width: 100%;
     color: white;
@@ -11,4 +12,12 @@ body>footer {
     border-top: 10px double var(--red);
     display: flex;
     font-size: 2em;
+    justify-content: center;
+
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 3em;
+    font-size: 1.5rem;
 }

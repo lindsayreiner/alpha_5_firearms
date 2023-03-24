@@ -7,12 +7,10 @@ export default function Footer() {
     return (
         <>
             <footer className="footer">
-                <div>
-
+                <div className="footer-text">
+                    COPYRIGHT © 2023 ALPHA 5 FIREARMS TRAINING - ALL RIGHTS RESERVED.
                 </div>
-                <ul className="footerCont">
-                    <li><a className="navBtn" href="/" alt="">Home</a></li>
-                </ul>
+
             </footer>
         </>
     )

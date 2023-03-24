@@ -73,7 +73,7 @@ img {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(132deg, rgb(187, 36, 13) 0.00%, rgb(255, 255, 255) 20.00%, rgb(5, 68, 158) 40.00%);
+  background: linear-gradient(132deg, rgb(187, 36, 13) 27.00%, rgb(255, 255, 255) 45.00%, rgb(5, 68, 158) 69.00%);
   border-radius: 10px;
 }
 
