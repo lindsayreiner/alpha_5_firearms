@@ -2,6 +2,9 @@ import React from 'react';
 
 import '../styles/Home.css';
 import hero from '../images/concealed_carry_cross(1).jpg';
+import level from '../images/level1_instructor.svg';
+import rso from '../images/rso-badge.svg';
+import conceal from '../images/concealed_carry_badge.svg';
 
 export default function Home() {
     return (
@@ -14,7 +17,7 @@ export default function Home() {
 
                 </h2>
 
-                <img className="hero-img" src={hero} width="100%" height="550px" alt="woman firing pistol with pink ear muffs" />
+                <img className="hero-img" src={hero} width="100%" height="550px" alt="holstered pistol on a wooden frame" />
             </section>
             <section>
 

@@ -16,7 +16,7 @@ export default function Nav() {
                         <NavLink className="navBtnLink" to="/">Home</NavLink>
                     </li>
                     <li className="navBtn">
-                        <NavLink className="navBtnLink" to="https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192" target="_blank">Courses</NavLink>
+                        <NavLink className="navBtnLink" to="https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192">Courses</NavLink>
                     </li>
                     <li className="navBtn">
                         <NavLink className="navBtnLink" to="/about">Meet Your Instructor</NavLink>

@@ -1,10 +1,12 @@
 .hero-content {
-    position: relative;
-    margin: 5rem;
+    /* position: relative; */
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-img {
-    /* width: 100vw; */
+    width: 75vw;
     height: 60vh;
 }
 
@@ -14,7 +16,7 @@
 
 @media screen and (max-width: 700px) {
     .hero-img {
-        width: 100vw;
+        width: 75vw;
         height: 45vh;
     }
 }
