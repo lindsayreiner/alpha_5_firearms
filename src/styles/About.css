@@ -57,6 +57,10 @@
 }
 
 @media screen and (max-width: 441px) {
+    .about-container {
+        margin: 5em 0;
+    }
+
     .about-para {
         padding: 0;
         text-align: center;
@@ -66,7 +70,7 @@
 
 @media screen and (max-width: 373px) {
     .card-container {
-        margin: 0 5em;
+        margin: 0 2em;
     }
 
     .badges {
@@ -79,10 +83,6 @@
 }
 
 @media screen and (max-width: 350px) {
-    .card-container {
-        margin: 0 5em;
-    }
-
     .about-para {
 
         text-align: center;
