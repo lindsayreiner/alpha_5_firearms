@@ -1,0 +1,55 @@
+.about-container {
+    margin: 5em 1em;
+}
+
+.card-container {
+    margin: 0 auto;
+}
+
+.certs {
+    font-size: 1.5rem;
+}
+
+.about-para {
+    padding: 0 2rem;
+}
+
+/* .uv {
+    filter: brightness(0.8) contrast(1.9) saturate(1.4) opacity(0.71) sepia(0.26) grayscale(0.72);
+} */
+
+/* .about-name {
+    font-family: 'Inspiration', cursive !important;
+} */
+
+@media screen and (max-width: 1000px) {
+    .card-container {
+        margin: 0 5em;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .card-container {
+        margin: 0 5em;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .badges {
+        all: unset;
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 2rem;
+        margin-left: 3rem;
+    }
+
+    .last-badge {
+        padding: 2rem 5rem;
+    }
+}
+
+/* @media screen and (max-width: 335px) {
+    .badges {
+        flex-direction: column;
+    }
+} */

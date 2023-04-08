@@ -6,6 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import AOS from "aos";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './styles/App.css';
 
 import Home from './pages/Home';
@@ -20,27 +21,49 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 function App() {
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
+
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: "#623555"
+      },
+      secondary: {
+        main: "rgb(252, 224, 158)"
+      }
+    },
+    typography: {
+      fontSize: 25,
+      fontWeight: "bold",
+      fontFamily: [
+        'Fira Sans', 'sans-serif'
+      ].join(','),
+    }
+  });
+
   return (
     <>
-      <Router>
-        <main>
-          <Navbar />
-          <Routes>
+      <ThemeProvider theme={theme}>
+        <Router>
+          <main>
+            <Navbar />
+            <Routes>
 
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            {/* <Route path="/courses" element={<Courses />} /> */}
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              {/* <Route path="/courses" element={<Courses />} /> */}
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/contact" element={<Contact />} />
 
-          </Routes>
-        </main>
-        <Footer />
-      </Router>
+            </Routes>
+          </main>
+          {/* <Footer /> */}
+        </Router>
+      </ThemeProvider>
     </>
   );
 }
