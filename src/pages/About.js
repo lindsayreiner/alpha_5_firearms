@@ -108,13 +108,13 @@ export default function About() {
 
                             <Stack className="badges" sx={{ margin: '2em' }} direction="row" spacing={2}>
                                 <Tooltip title="Concealed Carry and Home Defense Fundamentals - Certified Instructor">
-                                    <Avatar sx={{ width: 100, height: 100 }} alt="Concealed Carry Badge" src={concealed} />
+                                    <img className="avatar" sx={{ width: 100, height: 100, objectFit: 'unset' }} alt="Concealed Carry Badge" src={concealed} />
                                 </Tooltip>
                                 <Tooltip title="Range Safety Instructor">
-                                    <Avatar sx={{ width: 100, height: 100 }} alt="RSO Badge" src={rso} />
+                                    <img className="avatar" sx={{ width: 100, height: 100 }} alt="RSO Badge" src={rso} />
                                 </Tooltip>
                                 <Tooltip title="Defensive Shooting Funamentals - Level 1 - Certified Instructor">
-                                    <Avatar className="last-badge" sx={{ width: 100, height: 100 }} alt="Level 1 Instructor Badge" src={level} />
+                                    <img className=" avatar last-badge" sx={{ width: 100, height: 100 }} alt="Level 1 Instructor Badge" src={level} />
                                 </Tooltip>
                             </Stack>
 
@@ -123,7 +123,7 @@ export default function About() {
                             Vance is a strength and conditioning coach, exercise physiologist and movement specialist with a deep understanding of human biomechanics with over 35 years of experience. He has worked with a variety of populations on anything related to movement efficiency from sports performance to post-surgical corrective exercise. A large part of being an exercise physiologist is about educating clients in a way that ingrains in them a methodology on how to care for their bodies without oversight.
                         </Typography>
                         <Typography paragraph className="about-para">
-                            As a firearms instructor, he’s taken his love of teaching and experience in movement science to provide a wholistic approach to learning how to defend yourself and your family if that time comes.
+                            As a firearms instructor, he’s taken his love of teaching and experience in movement science to provide a wholistic approach to learning how to defend yourself and your family with confidence.
                         </Typography>
                     </CardContent>
                 </Collapse>
