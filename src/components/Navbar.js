@@ -134,7 +134,9 @@ export default function Navbar() {
                             }}
                         >
                             {/* Mobile logo */}
-                            Alpha 5 Firearms Training
+                            <NavLink className="navBtn" to="/">
+                                <img className="logo" src={logo} alt="alpha firearms logo" />
+                            </NavLink>
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             <Button
