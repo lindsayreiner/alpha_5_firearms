@@ -58,6 +58,7 @@ export default function Navbar() {
                                 textDecoration: 'none',
                             }}
                         >
+                            {/* Desktop logo */}
                             <NavLink className="navBtn" to="/">
                                 <img className="logo" src={logo} alt="alpha firearms logo" />
                             </NavLink>
@@ -99,7 +100,7 @@ export default function Navbar() {
                                     </NavLink>
                                 </MenuItem>
                                 <MenuItem onClick={handleCloseNavMenu}>
-                                    <NavLink className='mobile-nav-btn' to='https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192'>
+                                    <NavLink className='mobile-nav-btn' to='https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192' target="_blank">
                                         <Typography textAlign="center">Classes</Typography>
                                     </NavLink>
                                 </MenuItem>
@@ -125,16 +126,15 @@ export default function Navbar() {
                                 mr: 2,
                                 display: { xs: 'flex', md: 'none' },
                                 flexGrow: 1,
-                                fontFamily: 'monospace',
+                                fontFamily: 'inherit',
                                 fontWeight: 700,
                                 letterSpacing: '.3rem',
                                 color: 'inherit',
                                 textDecoration: 'none',
                             }}
                         >
-                            <NavLink className="navBtn" to="/">
-                                <img className="logo" src={logo} alt="alpha firearms logo" />
-                            </NavLink>
+                            {/* Mobile logo */}
+                            Alpha 5 Firearms Training
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             <Button
@@ -147,7 +147,9 @@ export default function Navbar() {
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
-                                <NavLink className='desktop-nav-btn' to="https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192">Classes</NavLink>
+                                <NavLink
+                                    className='desktop-nav-btn'
+                                    to="https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192" target="_blank">Classes</NavLink>
                             </Button>
                             <Button
                                 onClick={handleCloseNavMenu}
