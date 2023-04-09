@@ -18,7 +18,7 @@ import Blog from './pages/Blog';
 
 // import Nav from './components/Nav';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 
 function App() {
 
@@ -30,7 +30,7 @@ function App() {
   const theme = createTheme({
     palette: {
       primary: {
-        main: "#623555"
+        main: "#19192d"
       },
       secondary: {
         main: "rgb(252, 224, 158)"
