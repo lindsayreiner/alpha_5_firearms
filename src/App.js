@@ -32,8 +32,16 @@ function App() {
       primary: {
         main: "#19192d"
       },
-      secondary: {
-        main: "rgb(252, 224, 158)"
+      highlight: {
+        main: "rgb(7, 66, 230)",
+        contrastText: '#fff'
+      },
+      neutral: {
+        main: '#64748B',
+        contrastText: '#fff',
+      },
+      font: {
+        main: "rgb(210, 215, 223)"
       }
     },
     typography: {

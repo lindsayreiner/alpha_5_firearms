@@ -105,11 +105,11 @@ export default function Navbar() {
                                         <Typography textAlign="center" sx={{ fontWeight: 500 }}>Meet the Instructor</Typography>
                                     </NavLink>
                                 </MenuItem>
-                                <MenuItem onClick={handleCloseNavMenu}>
+                                {/* <MenuItem onClick={handleCloseNavMenu}>
                                     <NavLink className='mobile-nav-btn' to='/contact'>
                                         <Typography textAlign="center" sx={{ fontWeight: 500 }}>Contact</Typography>
                                     </NavLink>
-                                </MenuItem>
+                                </MenuItem> */}
 
                             </Menu>
                         </Box>
@@ -155,21 +155,24 @@ export default function Navbar() {
                             >
                                 <NavLink className='desktop-nav-btn' to="/about">Meet the Instructor</NavLink>
                             </Button>
-                            <Button
+                            {/* <Button
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
                                 <NavLink className='desktop-nav-btn' to="/contact">Contact</NavLink>
-                            </Button>
+                            </Button> */}
                         </Box>
 
                         {/* Contact */}
                         <Box sx={{ flexGrow: 0 }}>
-                            <Tooltip title="Contact Vance">
-                                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                    <Avatar alt="Picture of Vance" src={uv} />
-                                </IconButton>
-                            </Tooltip>
+                            <Button
+                                className="contact-btn"
+                                onClick={handleOpenUserMenu}
+                                variant="contained"
+                                color="highlight"
+                            >
+                                Contact
+                            </Button>
                             <Menu
                                 sx={{ mt: '45px' }}
                                 id="menu-appbar"
