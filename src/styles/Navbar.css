@@ -2,6 +2,16 @@
     height: 230px;
 }
 
+.desktop-nav-btn {
+    color: var(--french-gray);
+    text-decoration: none;
+}
+
+.mobile-nav-btn {
+    color: var(--darkest);
+    text-decoration: none;
+}
+
 /* .navBtn {
     text-decoration: none;
     list-style: none;

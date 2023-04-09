@@ -19,12 +19,12 @@ import logo from '../images/ag_logo_2.png';
 
 // const pages = ['Home', 'Courses', 'Meet Your Instructor', 'Contact'];
 
-const pages = [
-    { name: 'Home', url: '/' },
-    { name: 'Courses', url: 'https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192' },
-    { name: 'Meet Your Instructor', url: '/about' },
-    { name: 'Contact', url: '/contact' }
-]
+// const pages = [
+//     { name: 'Home', url: '/' },
+//     { name: 'Courses', url: 'https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192' },
+//     { name: 'Meet Your Instructor', url: '/about' },
+//     { name: 'Contact', url: '/contact' }
+// ]
 
 
 export default function Navbar() {
@@ -92,13 +92,28 @@ export default function Navbar() {
                                     display: { xs: 'block', md: 'none' },
                                 }}
                             >
-                                {pages.map((page, index) => (
-                                    <MenuItem onClick={handleCloseNavMenu} >
-                                        <NavLink key={index} to={page.url} >
-                                            {page.name}
-                                        </NavLink>
-                                    </MenuItem>
-                                ))}
+
+                                <MenuItem onClick={handleCloseNavMenu}>
+                                    <NavLink className='mobile-nav-btn' to='/'>
+                                        <Typography textAlign="center">Home</Typography>
+                                    </NavLink>
+                                </MenuItem>
+                                <MenuItem onClick={handleCloseNavMenu}>
+                                    <NavLink className='mobile-nav-btn' to='https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192'>
+                                        <Typography textAlign="center">Classes</Typography>
+                                    </NavLink>
+                                </MenuItem>
+                                <MenuItem onClick={handleCloseNavMenu}>
+                                    <NavLink className='mobile-nav-btn' to='/about'>
+                                        <Typography textAlign="center">Meet the Instructor</Typography>
+                                    </NavLink>
+                                </MenuItem>
+                                <MenuItem onClick={handleCloseNavMenu}>
+                                    <NavLink className='mobile-nav-btn' to='/contact'>
+                                        <Typography textAlign="center">Contact</Typography>
+                                    </NavLink>
+                                </MenuItem>
+
                             </Menu>
                         </Box>
                         <Typography
@@ -122,16 +137,30 @@ export default function Navbar() {
                             </NavLink>
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                            {pages.map((page, index) => (
-                                <Button
-                                    key={index}
-                                    href={page.url}
-                                    onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
-                                >
-                                    {page.name}
-                                </Button>
-                            ))}
+                            <Button
+                                onClick={handleCloseNavMenu}
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                <NavLink className='desktop-nav-btn' to='/'>Home</NavLink>
+                            </Button>
+                            <Button
+                                onClick={handleCloseNavMenu}
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                <NavLink className='desktop-nav-btn' to="https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192">Classes</NavLink>
+                            </Button>
+                            <Button
+                                onClick={handleCloseNavMenu}
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                <NavLink className='desktop-nav-btn' to="/about">Meet the Instructor</NavLink>
+                            </Button>
+                            <Button
+                                onClick={handleCloseNavMenu}
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                <NavLink className='desktop-nav-btn' to="/contact">Contact</NavLink>
+                            </Button>
                         </Box>
                     </Toolbar>
                 </Container>
