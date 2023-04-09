@@ -10,32 +10,34 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-// import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import Avatar from '@mui/material/Avatar';
+import Tooltip from '@mui/material/Tooltip';
 
 
 import '../styles/Navbar.css';
 import logo from '../images/ag_logo_2.png';
-
-// const pages = ['Home', 'Courses', 'Meet Your Instructor', 'Contact'];
-
-// const pages = [
-//     { name: 'Home', url: '/' },
-//     { name: 'Courses', url: 'https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192' },
-//     { name: 'Meet Your Instructor', url: '/about' },
-//     { name: 'Contact', url: '/contact' }
-// ]
+import uv from '../images/uv.jpeg';
 
 
 export default function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
+    const [anchorElUser, setAnchorElUser] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
 
+    const handleOpenUserMenu = (event) => {
+        setAnchorElUser(event.currentTarget);
+    };
+
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
+    };
+
+    const handleCloseUserMenu = () => {
+        setAnchorElUser(null);
     };
 
     return (
@@ -44,18 +46,12 @@ export default function Navbar() {
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <Typography
-                            variant="h6"
                             noWrap
                             component="a"
-                            href="/"
                             sx={{
                                 mr: 2,
                                 display: { xs: 'none', md: 'flex' },
-                                fontFamily: 'Fira Sans',
-                                fontWeight: 700,
                                 letterSpacing: '.3rem',
-                                color: 'inherit',
-                                textDecoration: 'none',
                             }}
                         >
                             {/* Desktop logo */}
@@ -96,22 +92,22 @@ export default function Navbar() {
 
                                 <MenuItem onClick={handleCloseNavMenu}>
                                     <NavLink className='mobile-nav-btn' to='/'>
-                                        <Typography textAlign="center">Home</Typography>
+                                        <Typography textAlign="center" sx={{ fontWeight: 500 }}>Home</Typography>
                                     </NavLink>
                                 </MenuItem>
                                 <MenuItem onClick={handleCloseNavMenu}>
                                     <NavLink className='mobile-nav-btn' to='https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192' target="_blank">
-                                        <Typography textAlign="center">Classes</Typography>
+                                        <Typography textAlign="center" sx={{ fontWeight: 500 }}>Classes</Typography>
                                     </NavLink>
                                 </MenuItem>
                                 <MenuItem onClick={handleCloseNavMenu}>
                                     <NavLink className='mobile-nav-btn' to='/about'>
-                                        <Typography textAlign="center">Meet the Instructor</Typography>
+                                        <Typography textAlign="center" sx={{ fontWeight: 500 }}>Meet the Instructor</Typography>
                                     </NavLink>
                                 </MenuItem>
                                 <MenuItem onClick={handleCloseNavMenu}>
                                     <NavLink className='mobile-nav-btn' to='/contact'>
-                                        <Typography textAlign="center">Contact</Typography>
+                                        <Typography textAlign="center" sx={{ fontWeight: 500 }}>Contact</Typography>
                                     </NavLink>
                                 </MenuItem>
 
@@ -166,32 +162,52 @@ export default function Navbar() {
                                 <NavLink className='desktop-nav-btn' to="/contact">Contact</NavLink>
                             </Button>
                         </Box>
+
+                        {/* Contact */}
+                        <Box sx={{ flexGrow: 0 }}>
+                            <Tooltip title="Contact Vance">
+                                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                                    <Avatar alt="Picture of Vance" src={uv} />
+                                </IconButton>
+                            </Tooltip>
+                            <Menu
+                                sx={{ mt: '45px' }}
+                                id="menu-appbar"
+                                anchorEl={anchorElUser}
+                                anchorOrigin={{
+                                    vertical: 'top',
+                                    horizontal: 'right',
+                                }}
+                                keepMounted
+                                transformOrigin={{
+                                    vertical: 'top',
+                                    horizontal: 'right',
+                                }}
+                                open={Boolean(anchorElUser)}
+                                onClose={handleCloseUserMenu}
+                            >
+
+                                <MenuItem onClick={handleCloseUserMenu}>
+                                    <a className="contact-links" href="tel:864-420-8261">
+                                        <Typography textAlign="center">Call Now</Typography>
+                                    </a>
+                                </MenuItem>
+                                <MenuItem onClick={handleCloseUserMenu}>
+                                    <a className="contact-links" href="mailto:vaf5@protonmail.com">
+                                        <Typography textAlign="center">Send Email</Typography>
+                                    </a>
+                                </MenuItem>
+                                <MenuItem className="contact-links" onClick={handleCloseUserMenu}>
+                                    <a className="contact-links" href="https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192" target="_blank" rel="noreferrer">
+                                        <Typography textAlign="center">Book a class</Typography>
+                                    </a>
+                                </MenuItem>
+
+                            </Menu>
+                        </Box>
                     </Toolbar>
                 </Container>
             </AppBar>
-            {/* <nav class="top-nav">
-
-                <NavLink className="navBtn" to="/">
-                    <img className="logo" src={logo} alt="alpha firearms logo" />
-                </NavLink>
-                <ul class="menu">
-                    <li>
-                        <NavLink className="navBtn" to="/">Home</NavLink>
-                    </li>
-                    <li>
-                        <NavLink className="navBtn" to="https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192" target="_blank">Courses</NavLink>
-                    </li>
-                    <li>
-                        <NavLink className="navBtn" to="/about">Meet Your Instructor</NavLink>
-                    </li>
-                     <li>
-                        <NavLink className="navBtn" to="/blog">Blog</NavLink>
-                    </li> 
-                    <li>
-                        <NavLink className="navBtn" to="/contact">Contact</NavLink>
-                    </li>
-                </ul>
-            </nav> */}
         </>
     )
 }

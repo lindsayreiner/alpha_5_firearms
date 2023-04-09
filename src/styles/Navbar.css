@@ -7,74 +7,9 @@
     text-decoration: none;
 }
 
-.mobile-nav-btn {
+.mobile-nav-btn,
+.contact-links {
     color: var(--darkest);
     text-decoration: none;
+    font-weight: 900;
 }
-
-/* .navBtn {
-    text-decoration: none;
-    list-style: none;
-    color: var(--french-gray);
-    font-size: 1.7rem;
-    letter-spacing: 2px;
-    transition: all 0.25s ease-in;
-    padding: 1em;
-} */
-
-/* li:hover {
-    font-weight: bold;
-} */
-
-
-/* .navBtn:focus {
-    color: var(--royal-blue);
-} */
-
-/* .top-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--darkest);
-    color: #FFF;
-    height: 110px;
-    padding-bottom: 1em;
-} */
-
-/* .menu {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu:last-child {
-    margin-right: 5em;
-} */
-
-
-
-
-
-
-/* --------------------*/
-/* Media Queries       */
-/* --------------------*/
-
-/* @media (max-width: 830px) {
-    .logo {
-        height: 165px;
-    }
-
-    .top-nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        height: 70px;
-        padding: 1em;
-        width: 100%;
-    }
-} */
