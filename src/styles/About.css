@@ -16,15 +16,10 @@
     height: 8em;
 }
 
-
-
-/* .uv {
+.uv {
     filter: brightness(0.8) contrast(1.9) saturate(1.4) opacity(0.71) sepia(0.26) grayscale(0.72);
-} */
+}
 
-/* .about-name {
-    font-family: 'Inspiration', cursive !important;
-} */
 
 @media screen and (max-width: 1000px) {
     .card-container {

@@ -11,13 +11,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import Avatar from '@mui/material/Avatar';
-import Tooltip from '@mui/material/Tooltip';
 
 
 import '../styles/Navbar.css';
 import logo from '../images/ag_logo_2.png';
-import uv from '../images/uv.jpeg';
+import LogoTwo from '../images/alpha5(1).png';
+// import uv from '../images/uv.jpeg';
 
 
 export default function Navbar() {
@@ -56,7 +55,7 @@ export default function Navbar() {
                         >
                             {/* Desktop logo */}
                             <NavLink className="navBtn" to="/">
-                                <img className="logo" src={logo} alt="alpha firearms logo" />
+                                <img className="logo" src={LogoTwo} alt="alpha firearms logo" />
                             </NavLink>
                         </Typography>
 
@@ -92,22 +91,22 @@ export default function Navbar() {
 
                                 <MenuItem onClick={handleCloseNavMenu}>
                                     <NavLink className='mobile-nav-btn' to='/'>
-                                        <Typography textAlign="center" sx={{ fontWeight: 500 }}>Home</Typography>
+                                        <Typography textAlign="center">Home</Typography>
                                     </NavLink>
                                 </MenuItem>
                                 <MenuItem onClick={handleCloseNavMenu}>
                                     <NavLink className='mobile-nav-btn' to='https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192' target="_blank">
-                                        <Typography textAlign="center" sx={{ fontWeight: 500 }}>Classes</Typography>
+                                        <Typography textAlign="center">Classes</Typography>
                                     </NavLink>
                                 </MenuItem>
                                 <MenuItem onClick={handleCloseNavMenu}>
                                     <NavLink className='mobile-nav-btn' to='/about'>
-                                        <Typography textAlign="center" sx={{ fontWeight: 500 }}>Meet the Instructor</Typography>
+                                        <Typography textAlign="center">Instructor</Typography>
                                     </NavLink>
                                 </MenuItem>
                                 {/* <MenuItem onClick={handleCloseNavMenu}>
                                     <NavLink className='mobile-nav-btn' to='/contact'>
-                                        <Typography textAlign="center" sx={{ fontWeight: 500 }}>Contact</Typography>
+                                        <Typography textAlign="center">Contact</Typography>
                                     </NavLink>
                                 </MenuItem> */}
 
@@ -131,7 +130,7 @@ export default function Navbar() {
                         >
                             {/* Mobile logo */}
                             <NavLink className="navBtn" to="/">
-                                <img className="logo" src={logo} alt="alpha firearms logo" />
+                                <img className="logo" src={LogoTwo} alt="alpha firearms logo" />
                             </NavLink>
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
@@ -153,7 +152,7 @@ export default function Navbar() {
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
-                                <NavLink className='desktop-nav-btn' to="/about">Meet the Instructor</NavLink>
+                                <NavLink className='desktop-nav-btn' to="/about">Instructor</NavLink>
                             </Button>
                             {/* <Button
                                 onClick={handleCloseNavMenu}
@@ -192,7 +191,7 @@ export default function Navbar() {
 
                                 <MenuItem onClick={handleCloseUserMenu}>
                                     <a className="contact-links" href="tel:864-420-8261">
-                                        <Typography textAlign="center">Call Now</Typography>
+                                        <Typography textAlign="center">Call</Typography>
                                     </a>
                                 </MenuItem>
                                 <MenuItem onClick={handleCloseUserMenu}>
