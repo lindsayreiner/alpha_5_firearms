@@ -30,10 +30,11 @@ function App() {
   const theme = createTheme({
     palette: {
       primary: {
-        main: "#19192d"
+        main: "#191d1c",
+
       },
       highlight: {
-        main: "rgb(7, 66, 230)",
+        main: "#017d60",
         contrastText: '#fff'
       },
       neutral: {

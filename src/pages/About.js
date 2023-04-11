@@ -120,7 +120,7 @@ export default function About() {
 
                         </Typography>
                         <Typography paragraph className="about-para">
-                            Vance is a strength and conditioning coach, exercise physiologist and movement specialist with a deep understanding of human biomechanics with over 35 years of experience. He has worked with a variety of populations on anything related to movement efficiency from sports performance to post-surgical corrective exercise. A large part of being an exercise physiologist is about educating clients in a way that ingrains in them a methodology on how to care for their bodies without oversight.
+                            Vance is a strength and conditioning coach, exercise physiologist and movement specialist with a deep understanding of human biomechanics with over 35 years of experience. He has worked with a variety of populations on anything related to movement efficiency from sports performance to post-surgical corrective exercise. Clients have included PGA Champion Tour player Bernhard Langer and Gold Glove Shortstop Tony Fernandez. A large part of being an exercise physiologist is about educating clients in a way that ingrains in them a methodology on how to care for their bodies without oversight.
                         </Typography>
                         <Typography paragraph className="about-para">
                             As a firearms instructor, Vance has taken his love of teaching and experience in movement science to provide a wholistic approach to learning how to defend yourself and your family with confidence.

@@ -168,7 +168,9 @@ export default function Navbar() {
                                 className="contact-btn"
                                 onClick={handleOpenUserMenu}
                                 variant="contained"
-                                color="highlight"
+                                color="info"
+                                size="small"
+                                elevation="6"
                             >
                                 Contact
                             </Button>
