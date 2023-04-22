@@ -14,8 +14,8 @@ import MenuItem from '@mui/material/MenuItem';
 
 
 import '../styles/Navbar.css';
-import logo from '../images/ag_logo_2.png';
-import LogoTwo from '../images/alpha5(1).png';
+import logo from '../images/alpha5logo_final.png';
+// import LogoTwo from '../images/alpha5(1).png';
 // import uv from '../images/uv.jpeg';
 
 
@@ -55,7 +55,7 @@ export default function Navbar() {
                         >
                             {/* Desktop logo */}
                             <NavLink className="navBtn" to="/">
-                                <img className="logo" src={LogoTwo} alt="alpha firearms logo" />
+                                <img className="logo" src={logo} alt="alpha firearms logo" />
                             </NavLink>
                         </Typography>
 
@@ -130,7 +130,7 @@ export default function Navbar() {
                         >
                             {/* Mobile logo */}
                             <NavLink className="navBtn" to="/">
-                                <img className="logo" src={LogoTwo} alt="alpha firearms logo" />
+                                <img className="logo" src={logo} alt="alpha firearms logo" />
                             </NavLink>
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>

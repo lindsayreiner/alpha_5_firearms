@@ -18,7 +18,7 @@ import Blog from './pages/Blog';
 
 // import Nav from './components/Nav';
 import Navbar from './components/Navbar';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -31,7 +31,6 @@ function App() {
     palette: {
       primary: {
         main: "#191d1c",
-
       },
       highlight: {
         main: "#017d60",
@@ -70,7 +69,7 @@ function App() {
 
             </Routes>
           </main>
-          {/* <Footer /> */}
+          <Footer />
         </Router>
       </ThemeProvider>
     </>
