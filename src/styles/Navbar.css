@@ -34,5 +34,7 @@
 @media screen and (max-width: 690px) {
     .mobileBizName {
         padding: 1em;
+        text-wrap: wrap;
+        text-align: center;
     }
 }

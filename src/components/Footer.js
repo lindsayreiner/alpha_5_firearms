@@ -9,7 +9,7 @@ export default function Footer() {
         <>
             <div className="foot">
                 <h6 className="footer-text">
-                    COPYRIGHT © 2023 ALPHA 5 FIREARMS TRAINING - ALL RIGHTS RESERVED.
+                    COPYRIGHT © 2023 FORT DEFIANCE FIREARMS TRAINING - ALL RIGHTS RESERVED.
                 </h6>
 
             </div>

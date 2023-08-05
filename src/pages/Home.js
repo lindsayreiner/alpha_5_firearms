@@ -40,6 +40,10 @@ export default function Home() {
                     -George Washington
                 </h2>
             </Box >
+
+            <Box>
+                <h3 className="classesTitle">Classes</h3>
+            </Box>
             <Box className="grid">
                 <Card className="class-card" sx={{ maxWidth: 345 }}>
                     <CardMedia

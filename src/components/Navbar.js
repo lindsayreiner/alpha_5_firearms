@@ -122,7 +122,6 @@ export default function Navbar() {
                                 display: { xs: 'flex', md: 'none' },
                                 flexGrow: 1,
                                 fontFamily: 'inherit',
-                                fontWeight: 700,
                                 letterSpacing: '.3rem',
                                 color: 'inherit',
                                 textDecoration: 'none',
