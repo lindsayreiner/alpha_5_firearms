@@ -14,7 +14,7 @@ import About from './pages/About';
 // import Courses from 'https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192';
 // import Coaching from './pages/Coaching';
 import Contact from './pages/Contact';
-import Blog from './pages/Blog';
+import Articles from './pages/Articles';
 
 // import Nav from './components/Nav';
 import Navbar from './components/Navbar';
@@ -64,7 +64,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               {/* <Route path="/courses" element={<Courses />} /> */}
-              <Route path="/blog" element={<Blog />} />
+              <Route path="/articles" element={<Articles />} />
               <Route path="/contact" element={<Contact />} />
 
             </Routes>

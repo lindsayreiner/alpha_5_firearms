@@ -33,13 +33,13 @@ export default function Home() {
                 <img className="hero-img hide" src={hero} alt="holstered pistol on a wooden frame" />
             </Box>
             <Box class="sub-header background">
-                <h1 className="hero-title">
-                    Gun training saves lives
-                </h1>
+                <h1 className="hero-title"><i>
+                    "A free people ought not only to be armed, but disciplined."
+                </i></h1>
                 <h2 className="hero-subtitle">
-                    Register for a class today!
+                    -George Washington
                 </h2>
-            </Box>
+            </Box >
             <Box className="grid">
                 <Card className="class-card" sx={{ maxWidth: 345 }}>
                     <CardMedia

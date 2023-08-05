@@ -16,6 +16,19 @@
     letter-spacing: .2rem;
 }
 
+.hero-title {
+    font-size: 30px;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+}
+
+.sub-header {
+    border-top: 1px double #fff;
+    margin-top: 1rem;
+}
+
 .grid {
     display: flex;
     justify-content: space-evenly;

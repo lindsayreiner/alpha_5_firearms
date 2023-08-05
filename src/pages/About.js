@@ -82,7 +82,7 @@ export default function About() {
                         </IconButton>
                     </Tooltip> */}
                         <Tooltip title="Email me">
-                            <IconButton aria-label="Email Me" href="mailto:waf5@protonmail.com">
+                            <IconButton aria-label="Email Me" href="mailto:vaf5@protonmail.com">
                                 <EmailIcon sx={{ color: pink[900], width: 40, height: 40 }} />
                             </IconButton>
                         </Tooltip>

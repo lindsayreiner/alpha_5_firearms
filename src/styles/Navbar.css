@@ -17,3 +17,22 @@
     text-decoration: none;
     font-weight: 900;
 }
+
+.bizName {
+    font-family: 'Pinyon Script', cursive;
+    text-decoration: none;
+    color: inherit;
+    font-size: 30px;
+}
+
+/* .mobileBizName {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+
+@media screen and (max-width: 690px) {
+    .mobileBizName {
+        padding: 1em;
+    }
+}

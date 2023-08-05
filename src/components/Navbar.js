@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 
 
 import '../styles/Navbar.css';
-import logo from '../images/alpha5logo_final.png';
+// import logo from '../images/alpha5logo_final.png';
 // import LogoTwo from '../images/alpha5(1).png';
 // import uv from '../images/uv.jpeg';
 
@@ -54,8 +54,8 @@ export default function Navbar() {
                             }}
                         >
                             {/* Desktop logo */}
-                            <NavLink className="navBtn" to="/">
-                                <img className="logo" src={logo} alt="alpha firearms logo" />
+                            <NavLink className="bizName navBtn" to="/">
+                                Fort Defiance Firearms Training
                             </NavLink>
                         </Typography>
 
@@ -89,11 +89,11 @@ export default function Navbar() {
                                 }}
                             >
 
-                                <MenuItem onClick={handleCloseNavMenu}>
+                                {/* <MenuItem onClick={handleCloseNavMenu}>
                                     <NavLink className='mobile-nav-btn' to='/'>
                                         <Typography textAlign="center">Home</Typography>
                                     </NavLink>
-                                </MenuItem>
+                                </MenuItem> */}
                                 <MenuItem onClick={handleCloseNavMenu}>
                                     <NavLink className='mobile-nav-btn' to='https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192' target="_blank">
                                         <Typography textAlign="center">Classes</Typography>
@@ -104,11 +104,11 @@ export default function Navbar() {
                                         <Typography textAlign="center">Instructor</Typography>
                                     </NavLink>
                                 </MenuItem>
-                                {/* <MenuItem onClick={handleCloseNavMenu}>
-                                    <NavLink className='mobile-nav-btn' to='/contact'>
-                                        <Typography textAlign="center">Contact</Typography>
+                                <MenuItem onClick={handleCloseNavMenu}>
+                                    <NavLink className='mobile-nav-btn' to='/articles'>
+                                        <Typography textAlign="center">Articles</Typography>
                                     </NavLink>
-                                </MenuItem> */}
+                                </MenuItem>
 
                             </Menu>
                         </Box>
@@ -129,17 +129,19 @@ export default function Navbar() {
                             }}
                         >
                             {/* Mobile logo */}
-                            <NavLink className="navBtn" to="/">
-                                <img className="logo" src={logo} alt="alpha firearms logo" />
+
+                            <NavLink className="bizName mobileBizName navBtn" to="/">
+                                Fort Defiance Firearms Training
                             </NavLink>
+
                         </Typography>
-                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                            <Button
+                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: { xs: 'flex-end' }, paddingRight: { xs: '5rem' } }}>
+                            {/* <Button
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
                                 <NavLink className='desktop-nav-btn' to='/'>Home</NavLink>
-                            </Button>
+                            </Button> */}
                             <Button
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
@@ -153,6 +155,12 @@ export default function Navbar() {
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
                                 <NavLink className='desktop-nav-btn' to="/about">Instructor</NavLink>
+                            </Button>
+                            <Button
+                                onClick={handleCloseNavMenu}
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                <NavLink className='desktop-nav-btn' to="/articles">Articles</NavLink>
                             </Button>
                             {/* <Button
                                 onClick={handleCloseNavMenu}
