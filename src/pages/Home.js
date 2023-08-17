@@ -8,14 +8,14 @@ import {
     Typography,
     Box,
     Stack,
-    Divider
+    Rating
 } from '@mui/material';
 
 
 
 import '../styles/Home.css';
-import Footer from '../components/Footer'
-import hero from '../images/concealed_carry_cross(1).jpg';
+// import Footer from '../components/Footer'
+// import hero from '../images/concealed_carry_cross(1).jpg';
 import range from '../images/gun_range.jpg';
 import concealed from '../images/concealed2.jpg';
 import pink from '../images/handgun_pink.jpg';
@@ -29,16 +29,28 @@ import pink from '../images/handgun_pink.jpg';
 export default function Home() {
     return (
         <>
-            <Box class="hero-content">
-                <img className="hero-img hide" src={hero} alt="holstered pistol on a wooden frame" />
+            <Box class="hero">
+                <Typography variant="h3" className="banner"> Concealed carry, firearms safety, and defensive shooting classes for all skill levels.</Typography>
+                <br />
+                <Rating name="read-only" value="5" readOnly />
+                <Typography variant="body1" className="review">"Vance is a great teacher stressing safety yet building our confidence in handling firearms. I was afraid of guns but now have confidence in my ability to safely use them." <br />-Martha C</Typography>
+
+                <Button
+                    className="joinClass"
+                    variant="contained"
+                    color="info"
+                    size="large"
+                    elevation="6"
+                    href="https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192"
+                >Join a Class</Button>
             </Box>
             <Box class="sub-header background">
-                <h1 className="hero-title"><i>
+                <p className="hero-title"><i>
                     "A free people ought not only to be armed, but disciplined."
-                </i></h1>
-                <h2 className="hero-subtitle">
+                </i></p>
+                <p className="hero-subtitle">
                     -George Washington
-                </h2>
+                </p>
             </Box >
 
             <Box>

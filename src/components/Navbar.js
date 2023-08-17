@@ -94,11 +94,11 @@ export default function Navbar() {
                                         <Typography textAlign="center">Home</Typography>
                                     </NavLink>
                                 </MenuItem> */}
-                                <MenuItem onClick={handleCloseNavMenu}>
+                                {/* <MenuItem onClick={handleCloseNavMenu}>
                                     <NavLink className='mobile-nav-btn' to='https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192' target="_blank">
                                         <Typography textAlign="center">Classes</Typography>
                                     </NavLink>
-                                </MenuItem>
+                                </MenuItem> */}
                                 <MenuItem onClick={handleCloseNavMenu}>
                                     <NavLink className='mobile-nav-btn' to='/about'>
                                         <Typography textAlign="center">Instructor</Typography>
@@ -141,14 +141,14 @@ export default function Navbar() {
                             >
                                 <NavLink className='desktop-nav-btn' to='/'>Home</NavLink>
                             </Button> */}
-                            <Button
+                            {/* <Button
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
                                 <NavLink
                                     className='desktop-nav-btn'
-                                    to="https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192" target="_blank">Classes</NavLink>
-                            </Button>
+                                    to="https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192" target="_blank">Join a Class</NavLink>
+                            </Button> */}
                             <Button
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
@@ -210,7 +210,7 @@ export default function Navbar() {
                                 </MenuItem>
                                 <MenuItem className="contact-links" onClick={handleCloseUserMenu}>
                                     <a className="contact-links" href="https://training.usconcealedcarry.com/instructor/403f6128-6d56-11eb-aad4-02420a020192" target="_blank" rel="noreferrer">
-                                        <Typography textAlign="center">Book a class</Typography>
+                                        <Typography textAlign="center">Join a class</Typography>
                                     </a>
                                 </MenuItem>
 
