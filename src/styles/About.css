@@ -15,14 +15,14 @@
 .avatar {
     width: 10em;
     height: 8em;
+    padding: 1rem;
 }
 
 .badges {
     display: flex;
     flex-flow: row wrap;
-    flex-direction: row;
     justify-content: center;
-    align-items: baseline;
+    margin: 5rem;
 }
 
 .uv {

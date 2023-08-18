@@ -24,7 +24,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Tooltip from '@mui/material/Tooltip';
-import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
 
 import { blue, pink } from '@mui/material/colors';
 
@@ -108,7 +108,7 @@ export default function About() {
                             <Typography paragraph className="certs">
                                 <strong>USCCA Firearms Instructor Certifications:</strong>
 
-                                <Stack className="badges" spacing={2}>
+                                <Box className="badges">
                                     <Tooltip title="Concealed Carry and Home Defense Fundamentals - Certified Instructor">
                                         <img className="avatar" sx={{ width: 100, height: 100, objectFit: 'unset' }} alt="Concealed Carry Badge" src={concealed} />
                                     </Tooltip>
@@ -118,7 +118,7 @@ export default function About() {
                                     <Tooltip title="Defensive Shooting Funamentals - Level 1 - Certified Instructor">
                                         <img className=" avatar last-badge" sx={{ width: 100, height: 100 }} alt="Level 1 Instructor Badge" src={level} />
                                     </Tooltip>
-                                </Stack>
+                                </Box>
 
                             </Typography>
                             <Typography paragraph className="about-para">
