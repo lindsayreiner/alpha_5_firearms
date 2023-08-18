@@ -5,7 +5,7 @@
     align-items: center;
     flex-wrap: wrap;
     font-size: 19px;
-    margin: 10rem 20rem;
+    margin: 10rem 5rem;
 }
 
 .banner {
@@ -75,7 +75,30 @@
     padding-top: 2rem; */
 }
 
+.aboutTitle {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+}
+
+
+@media screen and (max-width:1145px) {}
+
+
+
+
 @media screen and (max-width: 770px) {
+
+    .hero {
+        margin: 10rem 0;
+    }
+
+
+    .review {
+        padding: 2rem 3rem;
+    }
+
     .hide {
         display: none;
     }

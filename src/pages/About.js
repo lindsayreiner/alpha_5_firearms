@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../styles/About.css';
 
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
 import UV from '../images/uv.jpeg';
 import Hero from '../images/american_flag_grass.jpg'
 import concealed from '../images/concealed_carry_badge.svg';
@@ -19,14 +19,14 @@ import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import ArticleIcon from '@mui/icons-material/Article';
+// import ArticleIcon from '@mui/icons-material/Article';
 import EmailIcon from '@mui/icons-material/Email';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Tooltip from '@mui/material/Tooltip';
 import Stack from '@mui/material/Stack';
 
-import { amber, blue, pink, red } from '@mui/material/colors';
+import { blue, pink } from '@mui/material/colors';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -106,9 +106,9 @@ export default function About() {
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography paragraph className="certs">
-                                USCCA Firearms Instructor Certifications:
+                                <strong>USCCA Firearms Instructor Certifications:</strong>
 
-                                <Stack className="badges" sx={{ margin: '2em' }} direction="row" spacing={2}>
+                                <Stack className="badges" spacing={2}>
                                     <Tooltip title="Concealed Carry and Home Defense Fundamentals - Certified Instructor">
                                         <img className="avatar" sx={{ width: 100, height: 100, objectFit: 'unset' }} alt="Concealed Carry Badge" src={concealed} />
                                     </Tooltip>
@@ -122,6 +122,7 @@ export default function About() {
 
                             </Typography>
                             <Typography paragraph className="about-para">
+                                <strong>About:</strong> <br /><br />
                                 Vance is a strength and conditioning coach, exercise physiologist and movement specialist with a deep understanding of human biomechanics with over 35 years of experience. He has worked with a variety of populations on anything related to movement efficiency from sports performance to post-surgical corrective exercise. Clients have included PGA Champion Tour player Bernhard Langer and Gold Glove Shortstop Tony Fernandez. A large part of being an exercise physiologist is about educating clients in a way that ingrains in them a methodology on how to care for their bodies without oversight.
                             </Typography>
                             <Typography paragraph className="about-para">

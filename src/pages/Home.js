@@ -13,7 +13,9 @@ import {
 
 
 
+import About from './About';
 import '../styles/Home.css';
+
 // import Footer from '../components/Footer'
 // import hero from '../images/concealed_carry_cross(1).jpg';
 import range from '../images/gun_range.jpg';
@@ -26,14 +28,15 @@ import pink from '../images/handgun_pink.jpg';
 // import Reviews from '../components/Reviews';
 
 
+
 export default function Home() {
     return (
         <>
             <Box class="hero">
-                <Typography variant="h3" className="banner"> Concealed carry, firearms safety, and defensive shooting classes for all skill levels.</Typography>
+                <Typography sx={{ fontSize: 'h4.fontSize' }} className="banner"> Concealed carry, firearms safety, and defensive shooting classes for all skill levels.</Typography>
                 <br />
                 <Rating name="read-only" value="5" readOnly />
-                <Typography variant="body1" className="review">"Vance is a great teacher stressing safety yet building our confidence in handling firearms. I was afraid of guns but now have confidence in my ability to safely use them." <br />-Martha C</Typography>
+                <Typography variant="body1" className="review">"Vance is a great teacher stressing safety yet building our confidence in handling firearms. I was afraid of guns but now have confidence in my ability to safely use them." <br /><strong>-Martha C</strong></Typography>
 
                 <Button
                     className="joinClass"
@@ -134,6 +137,13 @@ export default function Home() {
                         </Button>
                     </CardActions>
                 </Card>
+            </Box>
+
+            <Box id="instructor" className="instructor">
+                <Box>
+                    <h3 className="aboutTitle">About the Instructor</h3>
+                </Box>
+                <About />
             </Box>
         </>
     )
