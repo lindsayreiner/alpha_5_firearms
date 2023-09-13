@@ -11,7 +11,7 @@ import {
     Rating
 } from '@mui/material';
 
-
+// import NavigationIcon from '@mui/icons-material/Navigation';
 
 import About from './About';
 import '../styles/Home.css';
@@ -33,7 +33,7 @@ export default function Home() {
     return (
         <>
             <Box class="hero">
-                <Typography sx={{ fontSize: 'h4.fontSize' }} className="banner"> Concealed carry, firearms safety, and defensive shooting classes for all skill levels.</Typography>
+                <Typography className="banner"> Concealed carry, firearms safety, and defensive shooting classes for all skill levels.</Typography>
                 <br />
                 <Rating name="read-only" value="5" readOnly />
                 <Typography variant="body1" className="review">"Vance is a great teacher stressing safety yet building our confidence in handling firearms. I was afraid of guns but now have confidence in my ability to safely use them." <br /><strong>-Martha C</strong></Typography>
